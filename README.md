@@ -1,3 +1,12 @@
+Project Members:
+
+Milton Clark
+Hannah Inkabi
+Erian Caballero
+
+Trello link https://trello.com/b/s7DSRBcf/youtube-clone-todo-list
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
