@@ -1,8 +1,6 @@
 Project Members:
 
-Milton Clark
-Hannah Inkabi
-Erian Caballero
+Milton Clark, Hannah Inkabi, Erian Caballero
 
 Trello link https://trello.com/b/s7DSRBcf/youtube-clone-todo-list
 
