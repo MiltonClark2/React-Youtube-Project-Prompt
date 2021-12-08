@@ -1,4 +1,5 @@
 
+import { Component } from 'react';
 import './App.css';
 
 class App extends Component{
@@ -12,7 +13,7 @@ class App extends Component{
     return(
       <div>
         <Navbar></Navbar>
-        
+
         <button>Search</button>
       </div>
     )
