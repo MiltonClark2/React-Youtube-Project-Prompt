@@ -9,12 +9,29 @@ class App extends Component{
 
     }
   }
+
+  handleButtonClick = () => {
+    console.log("Trigger")
+  }
+
   render(){
     return(
-      <div>
-        <Navbar></Navbar>
+      <div className="App">
+        <div id="navbar-container">
+          NavBar
+        </div>
+        <div id="search-container">
+          <input id="search-box" type="text" placeholder="Search..." />
+          <button id="search-button" onClick={this.handleButtonClick}>Search</button>
+        </div>
+        <div id="display-container">
+          <div id="search-results">
+            No Search Results Yet! Please submit a search above!
+          </div>
+        </div>
+       
 
-        <button>Search</button>
+       
       </div>
     )
   }

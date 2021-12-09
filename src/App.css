@@ -1,1 +1,29 @@
+.App {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
 
+#search-container {
+  position:relative;  
+  left:10%;
+  top:35%;
+}
+
+#search-box {
+  margin: 0 auto;
+  width: 500px;
+  
+}
+
+#search-button {
+  color: white;
+  background-color: red;
+}
+
+#display-container {
+  position: relative;
+  left: 10%;
+  top: 40%
+}
