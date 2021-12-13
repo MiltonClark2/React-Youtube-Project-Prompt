@@ -6,9 +6,7 @@
   }
 
 #search-container {
-  position:relative;  
-  left:10%;
-  top:35%;
+  text-align: center;
 }
 
 #search-box {
@@ -23,7 +21,15 @@
 }
 
 #display-container {
-  position: relative;
-  left: 10%;
-  top: 40%
+  text-align: left;
+}
+
+
+#search-results p {
+  padding-left: 15px;
+  padding-top: 15px;
+  background-color: lightgrey;
+  width: 550px;
+  height: 35px;
+  margin: 0 auto;
 }

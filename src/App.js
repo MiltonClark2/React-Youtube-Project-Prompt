@@ -6,12 +6,22 @@ class App extends Component{
   constructor(){
     super()
     this.state = {
+      searchInputValue: "",
+      fetchData: [],
 
     }
   }
 
-  handleButtonClick = () => {
-    console.log("Trigger")
+  handleOnSubmit = (e) => {
+    e.preventDefault();
+
+
+  }
+
+  handleUserInput = (e) => {
+    this.setState({
+      [this.searchInputValue]: e.target.value
+    })
   }
 
   render(){
@@ -20,18 +30,29 @@ class App extends Component{
         <div id="navbar-container">
           NavBar
         </div>
+
         <div id="search-container">
-          <input id="search-box" type="text" placeholder="Search..." />
-          <button id="search-button" onClick={this.handleButtonClick}>Search</button>
+          <form id="search-form">
+            <input 
+              id="search-box" 
+              type="text" 
+              placeholder="Search..." 
+              value={this.searchInputValue}
+              onInput={this.handleUserInput}
+            />
+            <button id="search-button" onClick={this.handleOnSubmit}>Search</button>
+          </form>
         </div>
+
         <div id="display-container">
           <div id="search-results">
-            No Search Results Yet! Please submit a search above!
+            <p>
+              No Search Results Yet! Please submit a search above!
+            </p>
           </div>
         </div>
-       
 
-       
+    
       </div>
     )
   }
