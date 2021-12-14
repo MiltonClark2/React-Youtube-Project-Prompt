@@ -1,7 +1,13 @@
 
 import { Component } from 'react';
+import { Route, Switch } from 'react-router';
 import './App.css';
-import Home from './components/Home';
+// import Home from './components/Home';
+// import Video from './components/Video'
+
+
+
+
 
 class App extends Component{
   constructor(){
@@ -14,10 +20,24 @@ class App extends Component{
 
   render(){
     return(
-      <div className="App">
-        <Home />
+      <div>
+        {/* <Nav /> */}
+        <Switch> 
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-    
+          <Route path = "/Video/:id">
+            <Video />
+          </Route>
+
+          {/* <Route path="/About">
+            <About />
+          </Route> */}
+          
+        
+
+        </Switch>
       </div>
     )
   }

@@ -1,5 +1,5 @@
 import { Component } from "react";
-
+import { Link } from "react-router-dom"
 
 
 class Home extends Component{
@@ -8,6 +8,7 @@ class Home extends Component{
         this.state = {
             searchInputValue: "",
             fetchData: [],
+            toggle: true
         }
     }
 
@@ -30,6 +31,7 @@ class Home extends Component{
                 this.setState({
                     fetchData: data.items,
                     searchInputValue:"",
+                    toggle: false
 
                 });
             });
@@ -42,7 +44,9 @@ class Home extends Component{
                 <div>
                     <div className="video">
                         <div className="image">
-                            <img src={video.snippet.thumbnails.high.url} alt={video.snippet.title} />
+                            <Link to = {`/Video/${video.id.videoId}`}>
+                                <img src={video.snippet.thumbnails.high.url} alt={video.snippet.title} />
+                            </Link>
                         </div>
                         <div className="title">
                             {video.snippet.title}
@@ -67,7 +71,7 @@ class Home extends Component{
                     </form>
                 </div>
 
-                <div id="search-results">
+                <div id="search-results" style={{display: this.state.toggle ? "block" : "none"}}>
                     <p>
                         No Search Results Yet! Please submit a search above!
                     </p>
