@@ -4,7 +4,6 @@ import fellow0 from "./photos/hannah.png"
 import fellow1 from "./photos/milton.png"
 import fellow2 from "./photos/erian.png"
 
-
 class About extends Component {
   render() {
     return (
