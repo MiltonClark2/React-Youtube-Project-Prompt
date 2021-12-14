@@ -1,12 +1,10 @@
-.App {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  }
+
+
 
 #search-container {
   text-align: center;
+  padding: 10px;
+  margin: 5px;
 }
 
 #search-box {
@@ -20,9 +18,6 @@
   background-color: red;
 }
 
-#display-container {
-  text-align: left;
-}
 
 
 #search-results p {
@@ -32,4 +27,26 @@
   width: 550px;
   height: 35px;
   margin: 0 auto;
+}
+
+#video-results {
+  grid-area: results;
+}
+
+#videos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.video{
+  margin: 10px;
+}
+
+.image{
+  margin: 10px;
+}
+
+.title{
+  margin: 10px;
+  padding: 5px;
 }
