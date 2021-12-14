@@ -8,9 +8,9 @@ import VideoPlayer from './VideoPlayer';
 class App extends Component {
   render(){
     return (
-      <div>
+      <div className="app">
         <About />
-        <VideoPlayer />
+        {/* <VideoPlayer /> */}
       </div>
     );
   }

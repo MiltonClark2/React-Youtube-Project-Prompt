@@ -10,16 +10,16 @@ class VideoPlayer extends Component {
     };
   }
 
-  componentDidMount() {
-    const youTubeAPI = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`;
-    fetch(youTubeAPI)
-      .then((result) => result.json())
-      .then((result) => {
-        this.setState({
-          videoArray: result,
-        });
-      });
-  }
+  // componentDidMount() {
+  //   const youTubeAPI = `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`;
+  //   fetch(youTubeAPI)
+  //     .then((result) => result.json())
+  //     .then((result) => {
+  //       this.setState({
+  //         videoArray: result,
+  //       });
+  //     });
+  // }
 
   render() {
     return(
