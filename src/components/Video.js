@@ -7,7 +7,10 @@ class Video extends Component{
     render(){
         return (
             <div>
-
+                <YouTube
+                    videoId = {this.props.match.params.id}
+                    opts = {{height: "600", width: "1000"}}
+                />
             </div>
         )
     }
