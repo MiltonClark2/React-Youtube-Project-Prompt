@@ -5,15 +5,40 @@ import './App.css';
 
 function HomePage(){
   return (
-    <div>
-      HOME
+    <div className="homePage">
+      <div>
+        HOME
+      </div>
+      <div>
+       "MILTON" INPUT/SEARCH BAR/ ERROR MESSAGE 
+      </div>
+
+      <div>
+        VIDEO SEARCH DISPLAY  
+        
+
+      </div>
+
+
+
     </div>
   )
 }
 
 function AboutUsPage(){
   return (
-    <div>ABOUT</div>
+     <div className="aboutUs">
+   
+       <div>
+         ABOUT
+       </div>
+
+       <div>
+         "HANNAH" ABOUT PROJECT/ TEAM BIO CARDS
+       </div>
+
+
+    </div>
   )
 }
 
@@ -26,7 +51,7 @@ function App() {
         <div>
         {/* Navbar */}
         <nav>
-          <h2>Youtube</h2>
+          <div className="header">YOUTUBE</div>
           
           <Link to="/">Home</Link>
           <Link to="/about">About Us</Link>
