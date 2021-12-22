@@ -32,11 +32,9 @@ class Home extends Component{
                     fetchData: data.items,
                     searchInputValue:"",
                     toggle: false
-
                 });
             });
       };
-
 
     render(){
         let videos = this.state.fetchData.map((video)=>{
@@ -77,11 +75,9 @@ class Home extends Component{
                     </p>
                 </div>
 
-                
-                 
-                    <div id="video-results">
-                        <div id="videos">{videos}</div>
-                    </div>
+                <div id="video-results">
+                    <div id="videos">{videos}</div>
+                </div>
             </div>
             
         )
