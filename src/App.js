@@ -3,13 +3,14 @@ import { Route, Switch } from "react-router";
 import "./App.css";
 import Home from "./components/Home";
 import Video from "./components/Video";
-import About from "./About";
+import About from "./components/About";
+import Navbar from "./components/Navbar";
 
 class App extends Component {
   render() {
     return (
       <div>
-        {/* <Nav /> */}
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />

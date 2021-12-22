@@ -1,3 +1,70 @@
+nav {
+  display: grid;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(110, 162, 192);
+  padding: 1px;
+  text-align: center;
+}
+
+nav h2 {
+  color: rgb(153, 29, 122);
+}
+
+nav a {
+  color: rgb(21, 51, 116);
+  text-decoration: none;
+  padding: 27px 20px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background-color: rgb(161, 212, 18);
+} 
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5px;
+  width: auto;
+  /* background-color: rgb(110, 162, 192); */
+  background: url("https://www.klaviyo.com/wp-content/uploads/2016/09/abstract-background-1024x273.jpg");
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: rgb(161, 212, 18);
+}
+
+.homePage {
+  background: url("http://static1.squarespace.com/static/54d15998e4b0553df778d21d/593d83d5725e25933822bf2f/5e9df693f4f258334d2e3a64/1587762030691/PixelPro+Animated+Background+5.png?format=1500w");
+  background-attachment: fixed;
+  background-position: center;
+  padding: 300px;
+  color: bisque;
+}
+
+.aboutUs {
+  background: url("http://static1.squarespace.com/static/54d15998e4b0553df778d21d/593d83d5725e25933822bf2f/5e9df693f4f258334d2e3a64/1587762030691/PixelPro+Animated+Background+5.png?format=1500w");
+  background-attachment: fixed;
+  background-position: center;
+  padding: 300px;
+  color: bisque;
+}
+
 .person-card{
   border: 2px solid black;
   text-align: center;
