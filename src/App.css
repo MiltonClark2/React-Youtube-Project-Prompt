@@ -1,3 +1,7 @@
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/002/070/810/non_2x/abstract-black-hexagon-pattern-on-glowing-gold-background-and-texture-vector.jpg");
+}
+
 nav {
   display: grid;
   display: flex;
@@ -19,7 +23,7 @@ nav a {
 }
 nav a:hover {
   background-color: rgb(161, 212, 18);
-} 
+}
 
 nav {
   display: grid;
@@ -37,6 +41,7 @@ nav {
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+  margin: 29px;
 }
 
 nav a {
@@ -65,23 +70,23 @@ nav a:hover {
   color: bisque;
 }
 
-.person-card{
+.person-card {
   border: 2px solid black;
   text-align: center;
   box-shadow: 5px 5px 5px rgb(161, 212, 18);
   margin: 15px;
-  
+  color: rgb(134, 196, 83);
 }
 
-.person-card img{
+.person-card img {
   width: 200px;
-  border: 2px solid black
+  border: 2px solid black;
 }
 
 #about-us-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -90,21 +95,26 @@ nav a:hover {
     ". . .";
 }
 
-#header { 
-grid-area: head; 
-text-align: center;
-border:2px solid black ;
-margin: 20px 20px;
-padding: 100px ;
+#header {
+  grid-area: head;
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px 20px;
+  padding: 100px;
+  color: rgb(118, 202, 49);
 }
 
-#p1 { grid-area: p1; }
+#p1 {
+  grid-area: p1;
+}
 
-#p2 { grid-area: p2; }
+#p2 {
+  grid-area: p2;
+}
 
-#p3 { grid-area: p3; }
-
-
+#p3 {
+  grid-area: p3;
+}
 
 #search-container {
   text-align: center;
@@ -115,15 +125,12 @@ padding: 100px ;
 #search-box {
   margin: 0 auto;
   width: 500px;
-  
 }
 
 #search-button {
   color: white;
-  background-color: red;
+  background-color: rgb(91, 163, 31);
 }
-
-
 
 #search-results p {
   padding-left: 15px;
@@ -136,22 +143,23 @@ padding: 100px ;
 
 #video-results {
   grid-area: results;
+  color: rgb(160, 235, 98);
 }
 
-#videos{
+#videos {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.video{
+.video {
   margin: 10px;
 }
 
-.image{
+.image {
   margin: 10px;
 }
 
-.title{
+.title {
   margin: 10px;
   padding: 5px;
 }
