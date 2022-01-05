@@ -8,10 +8,6 @@ class About extends Component {
   render() {
     return (
       <div id="about-us-container">
-        {/* <div id="project-info">
-            <h2> About the Project</h2>
-            <p>Project summary will go here.</p>
-          </div> */}
           <div id="header"> 
           <h1>About the project</h1>
           <p> Using React we created a Youtube clone by fetching data from a Youtube API. 
